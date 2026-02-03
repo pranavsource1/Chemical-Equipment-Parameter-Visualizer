@@ -1,6 +1,6 @@
 # Chemical Equipment Visualizer
 
-Hybrid Web Application for analyzing equipment parameters.
+Hybrid Web Application and Desktop Application for analyzing equipment parameters.
 
 ## Setup
 

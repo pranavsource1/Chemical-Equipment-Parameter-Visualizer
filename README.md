@@ -29,6 +29,24 @@ Hybrid Web Application for analyzing equipment parameters.
    npm run dev
    ```
 
+### Desktop App:
+
+#### Setup & Run
+1. Ensure the Django backend is running in another terminal:
+   ```bash
+   python manage.py runserver
+   ```
+2. Run the desktop app using the helper script:
+   ```cmd
+   ./run_desktop.bat
+   ```
+   Or manually:
+   ```bash
+   pip install -r desktop_app/requirements.txt
+   python desktop_app/main.py
+   ```
+
+
 ## Features
 - **Upload**: Drag & Drop CSV upload.
 - **Analytics**: Auto-calculation of Avg/Min/Max for Flowrate, Pressure, Temp.

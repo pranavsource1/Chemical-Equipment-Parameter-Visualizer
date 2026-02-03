@@ -1,0 +1,13 @@
+Equipment Name,Type,Flowrate,Pressure,Temperature
+Reactor Alpha,Reactor,125.5,5.5,360
+Reactor Beta,Reactor,115.2,5.1,340
+Pump X-100,Pump,455.0,12.5,45
+Pump X-200,Pump,440.0,11.8,48
+Main Heat Exchanger,Heat Exchanger,950.0,3.2,110
+Secondary Heat Exchanger,Heat Exchanger,800.0,3.0,105
+Distillation Col A,Column,55.0,1.5,88
+Distillation Col B,Column,52.0,1.4,86
+Mixer Feed,Mixer,0.0,1.0,22
+Storage Tank A,Tank,0.0,1.0,20
+Reactor Gamma,Reactor,130.0,5.8,370
+Pump Z-50,Pump,200.0,8.0,40

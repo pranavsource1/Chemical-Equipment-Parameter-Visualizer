@@ -1,0 +1,6 @@
+@echo off
+echo Installing dependencies...
+pip install -r desktop_app/requirements.txt
+echo Starting Desktop App...
+python desktop_app/main.py
+pause

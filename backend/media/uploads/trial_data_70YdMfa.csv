@@ -1,0 +1,11 @@
+Equipment Name,Type,Flowrate,Pressure,Temperature
+Centrifugal Pump A-01,Pump,450 L/min,12 bar,60°C
+Rotary Compressor X5,Compressor,1200 cfm,8 bar,110°C
+Heat Exchanger H-200,Heat Exchanger,800 L/min,5 bar,85°C
+Storage Tank T-10,Tank,0 L/min,1.2 bar,25°C
+Boiler Feed Pump B-02,Pump,300 L/min,15 bar,92°C
+Cooling Tower Fan C-01,Fan,5000 cfm,1 bar,30°C
+Hydraulic Press P-99,Press,50 L/min,200 bar,45°C
+Mixer M-500,Mixer,200 L/min,2 bar,55°C
+Valve V-102,Valve,600 L/min,10 bar,70°C
+Distillation Column D-5,Column,150 L/min,3 bar,120°C

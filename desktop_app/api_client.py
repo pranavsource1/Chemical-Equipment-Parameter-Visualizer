@@ -20,6 +20,23 @@ class APIClient:
             print(f"Login failed: {e}")
             return False
 
+    def register(self, username, password):
+        url = f"{BASE_URL}register/"
+        try:
+            response = requests.post(url, data={'username': username, 'password': password})
+            response.raise_for_status()
+            return True, "User created"
+        except Exception as e:
+            msg = "Registration failed"
+            if hasattr(e, 'response') and e.response is not None:
+                try:
+                    data = e.response.json()
+                    msg = data.get('error', str(e))
+                except:
+                    pass
+            print(f"Registration failed: {msg}")
+            return False, msg
+
     def _get_headers(self):
         headers = {}
         if self.token:

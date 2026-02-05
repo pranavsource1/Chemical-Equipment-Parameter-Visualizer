@@ -157,4 +157,19 @@ QMessageBox QPushButton:pressed {{
     border-color: {ACCENT_CYAN};
     color: {ACCENT_CYAN};
 }}
+
+QPushButton#SecondaryButton {{
+    background-color: transparent;
+    border: 1px solid {TEXT_MUTED};
+    color: {TEXT_MUTED};
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 10px 20px;
+}}
+
+QPushButton#SecondaryButton:hover {{
+    border-color: {TEXT_MAIN};
+    color: {TEXT_MAIN};
+    background-color: rgba(255, 255, 255, 0.05);
+}}
 """

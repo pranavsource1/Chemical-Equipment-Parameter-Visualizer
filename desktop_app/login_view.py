@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton, QFrame)
+from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton, QFrame, QMessageBox)
 from PyQt5.QtCore import Qt, pyqtSignal
 
 class LoginView(QWidget):
@@ -74,6 +74,12 @@ class LoginView(QWidget):
         self.btn_login.clicked.connect(self.handle_login)
         card_layout.addWidget(self.btn_login)
 
+        # Register Button
+        self.btn_register = QPushButton("Register")
+        self.btn_register.setObjectName("SecondaryButton")
+        self.btn_register.clicked.connect(self.handle_register)
+        card_layout.addWidget(self.btn_register)
+
         layout.addWidget(card)
 
     def handle_login(self):
@@ -101,3 +107,28 @@ class LoginView(QWidget):
         self.btn_login.setText("Sign In")
         self.btn_login.setEnabled(True)
         self.lbl_error.setText("")
+        
+    def handle_register(self):
+        username = self.input_user.text()
+        password = self.input_pass.text()
+
+        if not username or not password:
+            QMessageBox.warning(self, "Registration", "Please enter a username and password.")
+            return
+
+        self.btn_register.setText("Registering...")
+        self.btn_register.setEnabled(False)
+        import PyQt5.QtWidgets
+        PyQt5.QtWidgets.QApplication.processEvents()
+
+        success, msg = self.api_client.register(username, password)
+
+        self.btn_register.setText("Register")
+        self.btn_register.setEnabled(True)
+
+        if success:
+            QMessageBox.information(self, "Success", "Registration successful! Please sign in.")
+            self.lbl_error.setText("Account created. Please login.")
+        else:
+            QMessageBox.critical(self, "Error", f"Registration failed:\n{msg}")
+            self.lbl_error.setText(msg)

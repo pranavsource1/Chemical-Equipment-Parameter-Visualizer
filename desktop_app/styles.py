@@ -134,4 +134,27 @@ QMessageBox QPushButton:pressed {{
     color: white;
     border: none;
 }}
+
+#DashboardView {{
+    background-color: {DARK_BG};
+}}
+
+#DashboardContent {{
+    background-color: {DARK_BG};
+}}
+
+#ExportButton {{
+    background-color: {SIDEBAR_BG};
+    color: {TEXT_MAIN};
+    border: 1px solid #334155;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}}
+
+#ExportButton:hover {{
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: {ACCENT_CYAN};
+    color: {ACCENT_CYAN};
+}}
 """

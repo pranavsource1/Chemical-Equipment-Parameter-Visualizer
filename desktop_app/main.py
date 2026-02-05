@@ -111,6 +111,7 @@ class MainWindow(QMainWindow):
     def handle_logout(self):
         self.timer.stop()
         self.api_client.token = None
+        self.login_view.reset_ui()
         self.root_stack.setCurrentWidget(self.login_view)
         
         # Reset specific states if needed

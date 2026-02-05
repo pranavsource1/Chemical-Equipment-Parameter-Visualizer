@@ -95,3 +95,9 @@ class LoginView(QWidget):
             self.lbl_error.setText("Invalid credentials or server error.")
             self.btn_login.setText("Sign In")
             self.btn_login.setEnabled(True)
+    def reset_ui(self):
+        self.input_user.clear()
+        self.input_pass.clear()
+        self.btn_login.setText("Sign In")
+        self.btn_login.setEnabled(True)
+        self.lbl_error.setText("")

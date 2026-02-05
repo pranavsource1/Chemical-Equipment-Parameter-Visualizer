@@ -22,6 +22,7 @@ class MplCanvas(FigureCanvas):
 class DashboardView(QWidget):
     def __init__(self, api_client):
         super().__init__()
+        self.setObjectName("DashboardView")
         self.api_client = api_client
         self.dataset_id = None
         self.init_ui()
@@ -36,6 +37,7 @@ class DashboardView(QWidget):
         scroll.setStyleSheet("QScrollArea { border: none; background-color: transparent; }")
         
         self.content_widget = QWidget()
+        self.content_widget.setObjectName("DashboardContent")
         self.content_layout = QVBoxLayout(self.content_widget)
         self.content_layout.setSpacing(20)
         
@@ -58,8 +60,7 @@ class DashboardView(QWidget):
         header_layout.addStretch()
         
         self.btn_export = QPushButton("Export Report")
-        self.btn_export.setObjectName("Card") # Reuse card style for simple look or define new
-        self.btn_export.setStyleSheet("background-color: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 6px;")
+        self.btn_export.setObjectName("ExportButton")
         self.btn_export.clicked.connect(self.export_report)
         header_layout.addWidget(self.btn_export)
 

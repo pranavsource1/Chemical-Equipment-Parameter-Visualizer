@@ -1,0 +1,10 @@
+# Backend Data
+backend/db.sqlite3
+backend/media/
+db.sqlite3
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+backend/venv/

@@ -32,14 +32,17 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--bg-panel);
   border: 1px solid var(--border-glass);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-blue);
 }
@@ -63,7 +66,7 @@ body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
@@ -71,6 +74,7 @@ body {
   font-weight: 700;
   background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 3rem;
   letter-spacing: -0.02em;
@@ -89,7 +93,8 @@ body {
   gap: 12px;
 }
 
-.nav-item:hover, .nav-item.active {
+.nav-item:hover,
+.nav-item.active {
   background: rgba(0, 242, 234, 0.05);
   color: var(--accent-cyan);
   box-shadow: 0 0 15px rgba(0, 242, 234, 0.05);
@@ -126,7 +131,7 @@ body {
 }
 
 .glass-card {
-  background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
   border: 1px solid var(--border-glass);
   border-radius: 16px;
   padding: 1.5rem;
@@ -137,7 +142,7 @@ body {
 .glass-card:hover {
   transform: translateY(-2px);
   border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .stat-value {
@@ -146,6 +151,7 @@ body {
   margin: 0.5rem 0;
   background: linear-gradient(180deg, #fff, #b4c6e0);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -164,10 +170,11 @@ body {
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.upload-zone:hover, .upload-zone.drag-active {
+.upload-zone:hover,
+.upload-zone.drag-active {
   border-color: var(--accent-cyan);
   background: rgba(0, 242, 234, 0.05);
 }
@@ -190,12 +197,12 @@ body {
 
 .data-table td {
   padding: 1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   color: var(--text-main);
 }
 
 .data-table tr:hover td {
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .chart-container {

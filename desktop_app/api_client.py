@@ -1,7 +1,7 @@
 import requests
 import os
 
-BASE_URL = "https://chemical-equipment-parameter-visualizer-hx5i.onrender.com/api/data/"
+BASE_URL = "https://chemical-equipment-parameter-visualizer-hx5i.onrender.com/api/"
 
 class APIClient:
     def __init__(self):

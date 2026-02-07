@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-69@4-#m1(36+vu*!4@uqxi36mnqymtm8y+@)pvc%j=**w7^aep
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+   
+    "chemical-equipment-parameter-visualizer-hx5i.onrender.com",
+    "localhost",
+    "127.0.0.1"
+]
+
 
 
 # Application definition

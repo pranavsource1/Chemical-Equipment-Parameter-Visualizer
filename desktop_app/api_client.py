@@ -1,7 +1,7 @@
 import requests
 import os
 
-BASE_URL = "http://localhost:8000/api/"
+BASE_URL = "https://chemical-equipment-parameter-visualizer-hx5i.onrender.com/api/data/"
 
 class APIClient:
     def __init__(self):

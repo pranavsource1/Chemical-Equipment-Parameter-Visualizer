@@ -13,8 +13,8 @@ api.interceptors.request.use((config) => {
     return config;
 });
 
-export const login = (username, password) => axios.post('http://localhost:8000/api/token/', { username, password });
-export const register = (username, password) => axios.post('http://localhost:8000/api/register/', { username, password });
+export const login = (username, password) => axios.post('https://chemical-equipment-parameter-visualizer-hx5i.onrender.com/api/data/token/', { username, password });
+export const register = (username, password) => axios.post('https://chemical-equipment-parameter-visualizer-hx5i.onrender.com/api/data/register/', { username, password });
 
 export const uploadDataset = (formData) => api.post('upload/', formData);
 export const getHistory = () => api.get('history/');

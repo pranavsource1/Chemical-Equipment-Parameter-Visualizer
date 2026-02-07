@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://chemical-equipment-parameter-visualizer-hx5i.onrender.com/api/data',
+    baseURL: 'https://chemical-equipment-parameter-visualizer-hx5i.onrender.com/api',
     timeout: 10000,
 });
 
